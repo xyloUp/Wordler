@@ -1,0 +1,96 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#delete-account-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#delete-account-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    text-align: center;
+}
+
+#delete-account-container div button {
+    width: 20%;
+}
+
+#title {
+    margin-left: 10px;
+}
+
+#title-wordle {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .25rem;
+    text-decoration: underline;
+}
+
+#input-form {
+    margin-bottom: 5rem;
+}
+
+#profile-div {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 10rem;
+}
+
+
+#canvas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.box {
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.wordle-row {
+    display: flex;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+form h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-field, .username-field, .password-field {
+    margin: .5rem;
+}

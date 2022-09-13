@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block imports %}
+<script src="{{ url_for('static', filename='./js/index.js') }}" defer></script>
+{% endblock %}
+
+{% block body %}
+<div id="title-wordle">
+    <h2>Wordle</h2>
+</div>
+
+<div id="canvas"></div>
+
+<form id="input-form">
+    <div class="form-control">
+        <label for="input">Guess A Word!</label>
+        <input type="text" class="form-control" id="input" name="input" placeholder="Guess A Word" minlength="5" maxlength="5">
+    </div>
+</form>
+{% endblock %}

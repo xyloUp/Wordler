@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block imports %}
+<script src="{{ url_for('static', filename='./js/profile.js') }}" defer></script>
+{% endblock %}
+
+{% block body %}
+<div id="profile-div">
+    <div class="container">
+        <div id="profile-username">
+            <h4>Username: {{ user.username }}</h4>
+        </div>
+        <div id="created">
+            <h4>Date Account Created: {{ user.date_created }}</h4>
+        </div>
+        <div id="updated">
+            <h4>Last Updated: {{ user.date_updated or "Never Updated"}}</h4>
+        </div>
+        <div id="profile-score">
+            <h4>Score: {{ user.score }}</h4>
+        </div>
+        <div id="profile-losses">
+            <h4>Losses: {{ user.losses }}</h4>
+        </div>
+        <div id="delete-account">
+            <button class="btn btn-dark btn-primary" id="delete-account-btn">Delete Account</button>
+        </div>
+    </div>
+</div>
+
+<div id="delete-account-container" class="container">
+
+</div>
+{% endblock %}
